@@ -1,0 +1,23 @@
+.divcard{
+  display: grid;
+  grid-template-columns:  28% 28% 28%;
+  padding: 10%;
+  justify-content: center;
+  justify-content: space-between ;
+  text-align: center;
+  
+
+  
+}
+@media (min-width: 261px) and (max-width: 965px) {
+  
+  .divcard{
+      display: grid;
+      grid-template-columns:  30% 30%  ;
+      padding: 10%;
+      gap:10px;
+      justify-content: center;
+      
+  }
+  
+}
