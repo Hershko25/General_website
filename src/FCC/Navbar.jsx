@@ -13,21 +13,20 @@ export default function Navbar() {
 
 
   return (
-    <>
-    {/*Link to any page and close mobile menu*/}
+ 
+    
       <nav className='navbar'>
-        
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Web
             
           </Link>
          
-          <div className='menu-icon' onClick={()=>setClick(!click)}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />{/*If true then times else bars*/}
-          </div>
+          <ul className='menu-icon' onClick={()=>setClick(!click)}>
+            <li className={click ? 'fas fa-times' : 'fas fa-bars'} />{/*If true then times else bars*/}
+          </ul>
           
-          <div className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
@@ -63,16 +62,12 @@ export default function Navbar() {
                 Sing In
               </Link>
             </li>
-            
-        
-        
-           
-          </div>
+          </ul>
            <button className=' hide btn--outline btn--medium '>Sing In</button>{/*Sing in button*/}
         </div>
       </nav>
      
-    </>
+  
   );
 }
 
