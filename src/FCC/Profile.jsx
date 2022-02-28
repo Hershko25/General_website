@@ -21,9 +21,6 @@ export default function Profile(props) { //Design items received from the server
             </tbody>
         </table>
 
-
-
-
     )
     return (
 

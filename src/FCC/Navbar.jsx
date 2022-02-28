@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
  
-    
+    <header>
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
@@ -66,7 +66,7 @@ export default function Navbar() {
            <button className=' hide btn--outline btn--medium '>Sing In</button>{/*Sing in button*/}
         </div>
       </nav>
-     
+     </header>
   
   );
 }

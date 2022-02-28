@@ -3,7 +3,7 @@ import '../Css/Footer.css';
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <section className="footer-subscription"></section>
       <p className="footer-subscription-heading" style={{ color: 'white' }}>
         Join To Us!
@@ -65,6 +65,6 @@ export default function Footer() {
         </Link>
 
       </div>
-    </div>
+    </footer>
   )
 }
